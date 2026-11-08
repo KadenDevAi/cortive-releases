@@ -12,7 +12,7 @@
 set -euo pipefail
 
 VERSION="0.2.0"
-SHA256="84cf1c9a323c19751410a4443cc4d6783cd9a87d6735468eb17ac9cb427cdac4"
+SHA256="9d2a09a165cb64689225748cdc5797d14d0f4dae4e4f734b8e14fa3c85e054dd"
 URL="https://github.com/KadenDevAi/cortive-releases/releases/download/v${VERSION}/Cortive-${VERSION}.zip"
 
 say() { printf '\033[1m%s\033[0m\n' "$*"; }
