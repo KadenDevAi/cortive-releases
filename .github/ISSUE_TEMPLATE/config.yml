@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report privately instead
+    url: https://github.com/KadenDevAi/cortive-releases#feedback
+    about: For problems you can't describe without private details, use Report a Problem in Cortive (Settings → Help). It drafts an email instead of a public post.
