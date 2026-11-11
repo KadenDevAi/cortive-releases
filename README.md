@@ -8,9 +8,25 @@ This repository holds Cortive's downloads and release notes. Cortive is free dur
 
 ## Install
 
+<a href="https://github.com/KadenDevAi/cortive-releases/releases/latest/download/Cortive.dmg"><img src="docs/download-button.png" alt="Download Cortive for Mac" width="374"></a>
+
 Needs an Apple silicon Mac (M1 or later) with macOS 14 Sonoma or later.
 
-**One line in Terminal** (recommended):
+1. **Open the download** and drag Cortive into Applications.
+2. **Open Cortive.** The first time, macOS says it can't check Cortive for malware and doesn't open it. That's expected: the beta isn't signed with a paid Apple Developer account yet. Click **Done**, not Move to Trash.
+
+   <img src="docs/not-opened.png" alt="macOS popup: Cortive Not Opened. Apple could not verify Cortive is free of malware. Buttons: Move to Trash, Done" width="254">
+
+3. **Open System Settings → Privacy & Security**, scroll to **Security** at the very bottom and click **Open Anyway** next to Cortive. Confirm, then use your Mac password or Touch ID. You only do this once.
+
+   <img src="docs/open-anyway.png" alt="System Settings, Privacy &amp; Security, Security section: &quot;Cortive was blocked to protect your Mac&quot; with an Open Anyway button" width="474">
+
+4. **Add the Chrome extension** from the [Chrome Web Store](https://chromewebstore.google.com/detail/cortive/aebpbfkdpggpnigojbnhkcnemngjifia). It saves pages, passages and links with a right-click or a keyboard shortcut, and lets you search Cortive from any tab. If another browser is already connected to Cortive, approve the new one in Cortive's **Settings**.
+
+On first launch Cortive downloads its on-device search files (about 865 MB, from Hugging Face) and asks for Screen Recording, which it uses only when you take a screenshot capture.
+
+<details>
+<summary><b>Comfortable with Terminal?</b> Install with one line and skip steps 1–3.</summary>
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/KadenDevAi/cortive-releases/main/install.sh | bash
@@ -18,15 +34,7 @@ curl -fsSL https://raw.githubusercontent.com/KadenDevAi/cortive-releases/main/in
 
 It downloads the latest release from this page, checks it against its SHA-256 checksum, puts Cortive in Applications and opens it. [Read the script](install.sh) first if you like; it's short.
 
-**Or download the DMG** from [Releases](https://github.com/KadenDevAi/cortive-releases/releases/latest), open it and drag Cortive to Applications. The beta isn't signed with an Apple Developer ID yet, so the first time you open it macOS says it can't check it for malware. Then:
-
-1. Open **System Settings → Privacy & Security**.
-2. Scroll to the message about Cortive and click **Open Anyway**.
-3. Confirm with **Open**. You only do this once.
-
-**Then add the Chrome extension** from the [Chrome Web Store](https://chromewebstore.google.com/detail/cortive/aebpbfkdpggpnigojbnhkcnemngjifia). It saves pages, passages and links with a right-click or a keyboard shortcut, and lets you search Cortive from any tab. If another browser is already connected to Cortive, approve the new one in Cortive's **Settings**.
-
-On first launch Cortive downloads its on-device search files (about 865 MB, from Hugging Face) and asks for Screen Recording, which it uses only when you take a screenshot capture.
+</details>
 
 ## Use Cortive as your AI agent's memory
 
