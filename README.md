@@ -24,6 +24,8 @@ It downloads the latest release from this page, checks it against its SHA-256 ch
 2. Scroll to the message about Cortive and click **Open Anyway**.
 3. Confirm with **Open**. You only do this once.
 
+**Then add the Chrome extension** from the [Chrome Web Store](https://chromewebstore.google.com/detail/cortive/aebpbfkdpggpnigojbnhkcnemngjifia). It saves pages, passages and links with a right-click or a keyboard shortcut, and lets you search Cortive from any tab. If another browser is already connected to Cortive, approve the new one in Cortive's **Settings**.
+
 On first launch Cortive downloads its on-device search files (about 865 MB, from Hugging Face) and asks for Screen Recording, which it uses only when you take a screenshot capture.
 
 ## Use Cortive as your AI agent's memory
