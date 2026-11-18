@@ -11,8 +11,8 @@
 # It needs no password and changes nothing else on your Mac.
 set -euo pipefail
 
-VERSION="0.2.3"
-SHA256="c119ebbc704ae46c7daef640bb1c89e6cd6e00805598f2e60178441588de49d4"
+VERSION="0.2.4"
+SHA256="1d4560d7be3664110fdc76f97f05aba1209047efca541ba24b5ebac8c732d2c1"
 URL="https://github.com/KadenDevAi/cortive-releases/releases/download/v${VERSION}/Cortive-${VERSION}.zip"
 
 say() { printf '\033[1m%s\033[0m\n' "$*"; }
