@@ -2,11 +2,11 @@
 
 **Save what you read. Find it again by what it meant.**
 
-Cortive is a private knowledge base for your Mac. It keeps the pages, passages, PDFs, screenshots, documents, voice memos and clipboard snippets you choose to save, and finds them again by meaning, with an on-device model. Everything stays on your Mac: no account, no cloud, no telemetry.
+Cortive is a private knowledge base for your Mac or Windows PC. It keeps the pages, passages, PDFs, screenshots, documents, voice memos and clipboard snippets you choose to save, and finds them again by meaning, with an on-device model. Everything stays on your computer: no account, no cloud, no telemetry.
 
 This repository holds Cortive's downloads and release notes. Cortive is free during the public beta.
 
-## Install
+## Install on a Mac
 
 <a href="https://github.com/KadenDevAi/cortive-releases/releases/latest/download/Cortive.dmg"><img src="docs/download-button.png" alt="Download Cortive for Mac" width="374"></a>
 
@@ -36,9 +36,21 @@ It downloads the latest release from this page, checks it against its SHA-256 ch
 
 </details>
 
+## Install on Windows
+
+Needs 64-bit Windows 10 or 11.
+
+1. **Download** `Cortive_<version>_x64-setup.exe` from the [latest release](https://github.com/KadenDevAi/cortive-releases/releases/latest) and open it.
+2. **Windows SmartScreen warns you** ("Windows protected your PC"), because the beta installer isn't code-signed yet. Click **More info**, then **Run anyway**.
+3. **Agree to the terms.** The installer shows Cortive's terms of use, which include Microsoft's licence for the WebView2 component Cortive brings with it.
+4. **Choose Yes when Windows asks for permission.** Cortive uses it for one thing: a Windows Firewall rule that keeps its own copy of WebView2 (the part that draws its windows) off the internet. See [PRIVACY.md](PRIVACY.md#on-windows-the-part-of-windows-that-draws-cortives-windows).
+5. **Add the Chrome extension** from the [Chrome Web Store](https://chromewebstore.google.com/detail/cortive/aebpbfkdpggpnigojbnhkcnemngjifia), the same one as on a Mac.
+
+On first launch Cortive downloads its on-device search files (about 865 MB, from Hugging Face). To see previews of iPhone (HEIC) photos, install Microsoft's free HEIF Image Extensions and HEVC Video Extensions. Updates arrive inside Cortive, like on a Mac.
+
 ## Use Cortive as your AI agent's memory
 
-The [Cortive memory plugin for Hermes Agent](https://github.com/KadenDevAi/hermes-cortive) lets Hermes recall what you saved, read-only, with meaning search while Cortive is running:
+The [Cortive memory plugin for Hermes Agent](https://github.com/KadenDevAi/hermes-cortive) lets Hermes recall what you saved, read-only, with meaning search while Cortive is running (on Windows, Hermes needs Windows 11):
 
 ```bash
 hermes plugins install KadenDevAi/hermes-cortive
@@ -47,7 +59,7 @@ hermes config set memory.provider cortive
 
 ## Privacy
 
-[PRIVACY.md](PRIVACY.md) lists every connection Cortive makes. In short: the one-time search-files download, an optional update check against this repository, and nothing else. Your library never leaves your Mac.
+[PRIVACY.md](PRIVACY.md) lists every connection Cortive makes. In short: the one-time search-files download, an optional update check against this repository, and nothing else. On Windows, Windows' own Microsoft sign-in service also contacts Microsoft once when Cortive starts, which Cortive can't stop; PRIVACY.md explains it. Your library never leaves your computer.
 
 ## Feedback
 
